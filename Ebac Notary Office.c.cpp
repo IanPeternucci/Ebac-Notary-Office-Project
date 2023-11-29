@@ -1,11 +1,11 @@
-#include <stdio.h> //comunicaÁ„o 
-#include <stdlib.h> // alocaÁ„o de espaÁo na memÛria 
-#include <locale.h> // alocaÁ„o de texto por regi„o
-#include <string.h> // respons·vel pela string  
+#include <stdio.h> //comunica√ß√£o 
+#include <stdlib.h> // aloca√ß√£o de espa√ßo na mem√≥ria 
+#include <locale.h> // aloca√ß√£o de texto por regi√£o
+#include <string.h> // respons√°vel pela string  
 
 int registro() // Registro de nomes
 {
-	setlocale(LC_ALL, "Portuguese");// CÛdigo para ler acentos
+	setlocale(LC_ALL, "Portuguese");// C√≥digo para ler acentos
 	
 	char arquivo[40];
 	char cpf[40];
@@ -66,7 +66,7 @@ int registro() // Registro de nomes
 
 int consulta() // Consulta de nomes
 {
-	setlocale(LC_ALL, "Portuguese");// CÛdigo para ler acentos
+	setlocale(LC_ALL, "Portuguese");// C√≥digo para ler acentos
 	
 	char cpf[40];
 	char conteudo[200];
@@ -79,12 +79,12 @@ int consulta() // Consulta de nomes
 	
 	if(file == NULL)
 	{
-		printf("O arquivo n„o foi localizado!.\n");	
+		printf("O arquivo n√£o foi localizado!.\n");	
 	}
 	
 	while(fgets(conteudo, 200, file) != NULL)
 	{
-		printf("Essa s„o as informaÁıes do Usu·rio: ");
+		printf("Essa s√£o as informa√ß√µes do Usu√°rio: ");
 		printf("%s",conteudo);
 		printf("\n\n");
 	}
@@ -95,7 +95,7 @@ int consulta() // Consulta de nomes
 
 int deletar() // Deletar nomes
 {
-	setlocale(LC_ALL, "Portuguese");// CÛdigo para ler acentos
+	setlocale(LC_ALL, "Portuguese");// C√≥digo para ler acentos
 	
 	char cpf[40];
 	
@@ -109,7 +109,7 @@ int deletar() // Deletar nomes
 	
     if(file == NULL)
 	{
-		printf("O us˙ario n„o consta no sistema!.\n");
+		printf("O us√∫ario n√£o consta no sistema!.\n");
 		system("pause");
 	}
 	
@@ -118,39 +118,39 @@ int deletar() // Deletar nomes
 
 int main()
  {
- 	int opcao = 0;	// Vari·vel que defini as opÁıes
- 	int laco = 1; // Vari·vel de repetiÁ„o
+ 	int opcao = 0;	// Vari√°vel que defini as op√ß√µes
+ 	int laco = 1; // Vari√°vel de repeti√ß√£o
  
  for(laco=1;laco = 1;) 
  {
         system("cls");
     	
-		setlocale(LC_ALL, "Portuguese");// CÛdigo para ler acentos 
+		setlocale(LC_ALL, "Portuguese");// C√≥digo para ler acentos 
 
- 		printf("### CartÛrio Ebac ### \n"); // InÌcio do Menu
- 		printf("\nEscolha opÁ„o desejada do menu: \n");
+ 		printf("### Cart√≥rio Ebac ### \n"); // In√≠cio do Menu
+ 		printf("\nEscolha op√ß√£o desejada do menu: \n");
  		printf("\n\t1- Registro de nomes\n");
  		printf("\n\t2- Consulta de nomes\n");
  		printf("\n\t3- Deletar nomes\n\n");
  		printf("\t4- Sair do sistema\n\n");
- 		printf("OpÁ„o: "); // Fim do Menu
+ 		printf("Op√ß√£o: "); // Fim do Menu
  
- 		scanf("%d", &opcao); // Armazenamento das variavÈis do us˙ario
+ 		scanf("%d", &opcao); // Armazenamento das variav√©is do us√∫ario
  
- 		system("cls"); // Clear depois da escolha do us˙ario 
+ 		system("cls"); // Clear depois da escolha do us√∫ario 
 		 
 		switch(opcao)
 		{
-			case 1:
-			registro();
-     	    break;
+		    case 1:
+		    registro();
+     	            break;
      	    
-     	    case 2:
-     	    consulta();
+     	            case 2:
+     	            consulta();
  	 	    break;
  	 	    
  	 	    case 3:
-			deletar(); // Fim da SeleÁ„o
+		    deletar(); // Fim da Sele√ß√£o
  	 	    break;
  	 	    
  	 	    case 4:
@@ -158,8 +158,8 @@ int main()
  	 	    return 0;
  	 	    break;
 			
-			default:
-			printf("Est· opÁ„o n„o est· disponivel,selecione umas das trÍs opÁıes \n");
+		    default:
+		    printf("Est√° op√ß√£o n√£o est√° disponivel,selecione umas das tr√™s op√ß√µes \n");
  	 	    system("pause");
  	 	    break;
 			 
